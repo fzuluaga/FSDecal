@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+body {
+    background: linear-gradient(45deg, #ff00cc, #3333ff, #ff6600);
+    background-size: 600% 600%;
+    animation: gradientBackground 10s ease infinite;
+    color: #ffffff;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    overflow: auto; /* Enable scrolling */
+}
+
+h1 {
+    font-size: 5em;
+    text-shadow: 2px 2px 5px #ff00cc;
+    animation: bounce 1s infinite alternate ease-in-out;
+    transform-origin: 50% 50%;
+}
+
+p {
+    font-size: 2em;
+    color: #ffff00;
+    text-shadow: 1px 1px 2px #000000;
+    animation: spin 2s linear infinite;
+}
+
+img {
+    width: 50%;
+    border: 5px solid #ffffff;
+    border-radius: 20px;
+    transform: rotate(20deg);
+    box-shadow: 0px 0px 20px 5px rgba(255, 255, 255, 0.7);
+    animation: imgAnim 5s ease infinite;
+}
+
+@keyframes gradientBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes bounce {
+    from { transform: scale(1); }
+    to { transform: scale(1.2); }
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes imgAnim {
+    0%, 100% { transform: translateX(0) rotate(20deg); }
+    50% { transform: translateX(50px) rotate(-20deg); }
+}
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>I LOVE HTML</h1><br>
+    <img src="https://ih1.redbubble.net/image.506784300.5893/flat,750x,075,f-pad,750x1000,f8f8f8.u1.jpg"><br>
+    <h1>I HATE CSS</h1><br>
+    <img src="https://t3.ftcdn.net/jpg/00/71/14/04/360_F_71140435_A4kGltL08ggcZeSShPvrWdX8hk61Qr3R.jpg">
+</body>
+</html>

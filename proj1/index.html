@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Personal website for Felipe Zuluaga showcasing bio, hobbies, and project experiences">
+    <title>Felipe Zuluaga - Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>FELIPE ZULUAGA</h1>
+        </div>
+        <div class="menu">
+            <h2 class="selected">HOME</h2>
+            <br>
+            <a href="projects.html"><h2>PROJECTS</h2></a>
+        </div>
+    </header>
+    
+    <div class="grid-container">
+      <div class="bio">
+            <h2>Bio</h2>
+            <h3>Just a little bit about myself!</h3>
+            <div class="bio-container">
+                <div>
+                <p>So basically I am just a little 21 year old fella from Miami, I was born there but then I moved to the Middle East (it was crazy!). I have a dog, his name is Milo !</p>
+                <br>
+                <p>I study Computer Science at UC Berkeley and absolutely love it here, great weather, interesting classes, nice people.</p>
+                </div>
+                <div>
+                <p>My parents immigrated here from Colombia after my older brother was born. I lived all over but decided I would come back to pursue a better career!</p>
+                <br>
+                <p>I now hope to accomplish great things, I would have loved to have been a football player, or a musician but a SWE will do for now.</p>
+                </div>
+            </div>
+        </div>
+      <div class="bio-img">        
+        <img class="img-bio" src="https://www.treehugger.com/thmb/uZcdxIcuP0QPD_AQpvyvWjHto1g=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/lummus-park-in-the-morning--south-beach--miami--usa-1283558621-f47acfd2e72b4118a4e2d32f438f9f88.jpg" alt="A beautiful Miami beach">
+      </div>
+      <div class="hobbies">
+        <h2>Hobbies</h2>
+        <h3>The fun stuff!</h3>
+      
+        <ul id="hobby-list">
+          <li>Playing the guitar</li>
+          <li>Listening to music</li>
+          <li>Playing soccer with friends</li>
+        </ul>
+
+        <input type="text" id="hobby-name" placeholder="Enter a new hobby" />
+        <button id="add-hobby" data-testid="add-hobby">Add Hobby</button>
+      </div>  
+      <div class="projs"> <h2>Projects / Experiences</h2>
+            <h3>Things I've worked on !!!</h3>
+            <div class="projs-container">
+            <div>
+                <h4>Microsoft</h4>
+                <h5>2024</h5>
+                    <p>My First Internship !</p>
+            </div>
+            <div>
+            <h4>Harmonize</h4>
+                <h5>2023</h5>
+                    <p>A small little personal project I worked on!</p>
+            </div>
+            <div>
+            <h4>Link Health</h4>
+                <h5>2022</h5>
+                    <p>First non-profit work for a club I was in.</p>
+            </div>
+            </div></div>
+      <div class="projs-img">
+            <img class="img-projs" src="https://techcrunch.com/wp-content/uploads/2012/04/microsoft-logo.jpg">
+      </div>
+    </div>
+    <script src="script.js" type="text/javascript"></script>
+    </body>
+</html>
